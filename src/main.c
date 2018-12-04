@@ -12,7 +12,8 @@
 
 int main(void)
 {
-    test_cagmath();
+    test_c_agmath();
+    test_c_agmeasure();
 
     return EXIT_SUCCESS;
 }

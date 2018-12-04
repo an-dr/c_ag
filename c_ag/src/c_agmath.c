@@ -20,5 +20,6 @@ uint32_t CAG_LinInterp(uint32_t x, uint32_t x0, uint32_t y0, uint32_t x1, uint32
      * v
      * y = y0 + (x - x0) * (y1 - y0) / (x1 - x0)
      * */
-    return ( y0 + (x - x0) * (y1 - y0) / (x1 - x0) );
+    uint32_t r = ( y0 + (x - x0) * (y1 - y0) / (x1 - x0) );
+    return r;
 }

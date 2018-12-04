@@ -9,7 +9,10 @@
 #define TESTS_H_
 
 #include <stdio.h>
-#include "cagmath.h"
-void test_cagmath();
+#include "c_agmath.h"
+#include "c_agmeasure.h"
+
+void test_c_agmath();
+void test_c_agmeasure();
 
 #endif /* TESTS_H_ */
