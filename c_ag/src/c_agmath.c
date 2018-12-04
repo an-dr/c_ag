@@ -2,7 +2,7 @@
 // Created by Andrey Gramakov on 04-Dec-18.
 //
 
-#include "cagmath.h"
+#include <c_agmath.h>
 
 uint32_t CAG_GetArrAverage(uint32_t* array, uint32_t arr_size)
 {
