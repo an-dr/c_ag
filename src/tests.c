@@ -21,23 +21,25 @@ void test_c_agmath()
 
 void test_c_agmeasure()
 {
-    Point2D_Typedef new_arr[] = {
-                                   { 1, 0 },
-                                   { 5, 0 },
-                                   { 10, 0 },
-                                   { 20, 0 },
-                                   { 30, 0 },
-    };
     Point2D_Typedef old_arr[] = {
                                    { 1, 1 },
-                                   { 3, 3 },
-                                   { 17, 17 },
-                                   { 40, 40 },
+                                   { 5, 5 },
+                                   { 10, 10 },
+                                   { 20, 20 },
+                                   { 50, 50 },
     };
+    Point2D_Typedef new_arr[5];
+//    Point2D_Typedef new_arr[] = {
+//                                   { 1, 1 },
+//                                   { 3, 3 },
+//                                   { 17, 17 },
+//                                   { 40, 40 },
+//    };
     uint32_t old_sz =sizeof(old_arr)/sizeof(old_arr[0]);
     uint32_t new_sz =sizeof(new_arr)/sizeof(new_arr[0]);
 
-    CAG_2dGetInterpYArray(old_arr, old_sz, new_arr, new_sz);
+//    CAG_2dGetInterpYArray(old_arr, old_sz, new_arr, new_sz);
+    CAG_CreateArrayFromBase(old_arr, old_sz, new_arr, new_sz);
 
     printf(">> Interp\n");
     printf("Old arr: \n");

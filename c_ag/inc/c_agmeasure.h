@@ -19,7 +19,9 @@ typedef struct
 
 uint32_t CAG_2dGetInterpY(Point2D_Typedef point_arr[], uint32_t n_points, uint32_t interp_x);
 void CAG_2dGetInterpYArray(Point2D_Typedef *orig_arr, uint32_t orig_sz,
-                           Point2D_Typedef *new_arr,  uint32_t new_sz);
+                           Point2D_Typedef *new_arr_with_xs,  uint32_t new_sz);
+uint32_t CAG_CreateArrayFromBase(Point2D_Typedef *orig_arr, uint32_t orig_sz,
+                             Point2D_Typedef *new_arr_buf,  uint32_t new_sz);
 
 #ifdef __cplusplus
 }
